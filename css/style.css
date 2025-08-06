@@ -2,7 +2,7 @@
 
 .parallax   {
     height: 80%;
-    width: 90%;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -11,10 +11,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    justify-self: center;
 }
 
-.pt1   {
+.historia   {
     background-image: url("../img/nossaHistoria.png");
 }
 
