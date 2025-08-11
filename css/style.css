@@ -1,8 +1,20 @@
-/*Estilização Parallax*/
+/*HTML/Body*/
+html {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
 
-.parallax   {
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Estilização Parallax*/
+.parallax {
     height: 80%;
-    width: 90%;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -14,15 +26,12 @@
     justify-self: center;
 }
 
-.pt1   {
-    background-image: url("../img/nossaHistoria.png");
+.oQueE {
+    background-image: url("../img/tarde10.08.png");
 }
 
-/*HTML/Body*/
-html,
-body {
-    height: 100%;
-    width: 100%;
+.historia {
+    background-image: url("../img/nossaHistoria.png");
 }
 
 /*Header*/
@@ -73,4 +82,82 @@ main {
 .sobreCLJ {
     width: 95%;
     text-align: justify;
+}
+
+#historia {
+    margin-top: 5px;
+}
+
+#cronograma {
+    margin-top: 5px;
+}
+
+#funcionamentoTxt {
+    width: 95%;
+}
+
+video {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#video-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+#meInteressei {
+    margin-top: 5px;
+}
+
+#infosInteresse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+
+#textoInteresse {
+    width: 40%;
+}
+
+#informacoesH2 {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 319px) and (max-width: 441px) and (max-height: 916px) {
+    #infosInteresse {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+
+    #interesseH1 {
+        text-align: center;
+    }
+
+    #textoInteresse {
+        width: 95%;
+    }
+
+    #logoHeader {
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 835px) and (min-height: 1023px) and (max-height: 1281px) {
+    iframe {
+        width: 500px;
+        height: 350px;
+    }
 }

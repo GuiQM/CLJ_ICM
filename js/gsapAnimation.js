@@ -1,16 +1,17 @@
-/*ESTUDAR E VERIFICAR CÓDIGO*/
+  gsap.registerPlugin(ScrollTrigger);
 
+  const video = document.querySelector('#video-container video');
 
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to("#igrejaImg", {
+  gsap.to(video, {
     scrollTrigger: {
-        trigger: ".gsap-parallax",
-        start: "top 80%", // quando o topo da div atingir 80% da tela
-        toggleActions: "play none none none"
+      trigger: '#video-container',
+      start: 'top bottom',
+      end: 'bottom 95%',
+      scrub: true,
+      markers: false
     },
-    duration: 1,
-    opacity: 1,
-    y: 0,
-    ease: "power2.out"
-});
+    scale: 1.85,
+    ease: 'none'
+  });
+
+  
